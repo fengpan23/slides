@@ -1,0 +1,28 @@
+<div class="modal-header">
+	<h1>share</h1>
+</div>
+<div class="modal-body" style="overflow: hidden">
+	<div class="copy-link">
+		<h3>link:</h3>
+		<input/>
+		<button class="btn copy">Copy</button>
+	</div>
+	<div clas="send-email">
+		<h3>Email:</h3>
+		<div class="email-detail">
+			<div class="email-option">
+				<span class="email-option-content">to:</span>
+				<input type="email"/>
+			</div>
+			<div class="email-option">
+				<span class="email-option-content">Content:</span>
+				<textarea></textarea></br>
+			</div>
+			<button class="btn send">Send</button>
+		</div>
+	</div>
+</div>
+<div class="modal-footer">
+	<button class="btn cancel">cancel</button>
+	<button class="btn ok">Ok</button>
+</div>

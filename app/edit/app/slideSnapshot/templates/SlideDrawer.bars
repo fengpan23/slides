@@ -1,0 +1,3 @@
+{{#components}}
+{{#renderComponent . ''}}{{/renderComponent}}
+{{/components}}

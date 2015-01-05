@@ -1,0 +1,32 @@
+<div class="modal-header">
+	<button class="close" data-dismiss="modal">×</button>
+	<h3><span class="userClassify"></span> > <span class="tool-title"><i></i>新建课件</span></h3>
+</div>
+<form action="pmc/addDeck" method="post" autocomplete="on" target="view_frame">
+<div class="modal-body">
+		<input name="uid" value="" type="hidden">
+		<input name="uname" value="" type="hidden">
+		<input name="fid" value="" type="hidden">
+		<div class="filenameBar">
+			<span>课件名：</span><input type="text" name="filename" required="yes"/>
+		</div>
+		<div class="typeBar">
+			<span>类  型：</span>
+			<select name="type">
+				<option value="Default">默认</option>
+			  	<option value="Chinese">语文</option>  
+			  	<option value="Math">数学</option>  
+			  	<option value="English">英语</option>  
+			  	<option value="Art">美术</option>  
+			</select>
+		</div>
+		<div class="tagBar">
+			<div class="message"></div>
+			<span>标  签： </span><input type="text" name="tag" placeholder="多标签中间加逗号或空格" maxlength="25"/>
+		</div>
+</div>
+<div class="modal-footer">
+	<input type="button" value="开始编辑" />
+	<i class="edit-icon"></i>
+</div>
+</form>

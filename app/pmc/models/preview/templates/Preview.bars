@@ -1,0 +1,16 @@
+<div class="preview_header">
+	<span class="cloud-icon"></span>
+	<span class="filename"></span>
+	<span class="playIndex"></span>
+	<button class="close" data-dismiss="modal">×</button>
+</div>
+<div class="preview_bodyer">
+	<iframe src=""></iframe>
+	<div class="previous_page"></div>
+	<div class="next_page"></div>
+</div>
+<div class="preview_footer">
+	<div class="jumpBar">
+		预览第<input type="text" maxlength="3">页<input type="button" value="GO">
+	</div>
+</div>

@@ -1,0 +1,23 @@
+<div class="modal-body" style="overflow: hidden">
+	<div class="errors alert-error"></div>
+	<div class="themes">
+		<h1>Background Theme</h1>
+		<ul class="theme-list">
+			{{#themes.themes}}
+			<li class="theme-item {{klass}}" data-theme="{{klass}}"></li>
+			{{/themes.themes}}
+		</ul>
+	</div>
+	<div class="transition">
+		<h1>Transition</h1>
+		<ul class="transition-list">
+			{{#transition.transition}}
+			<li class="transition-item {{klass}}" data-transition="{{klass}}"></li>
+			{{/transition.transition}}
+		</ul>
+	</div>
+</div>
+<div class="modal-footer">
+	<button class="btn cancel">cancel</button>
+	<button class="btn ok">Ok</button>
+</div>

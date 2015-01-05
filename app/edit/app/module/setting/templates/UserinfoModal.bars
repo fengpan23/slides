@@ -1,0 +1,54 @@
+<div class="modal-header">
+	<h1>User Setting</h1>
+</div>
+<div class="modal-body" style="overflow: hidden">
+	<div class="title">
+		<h3>Deck Title:</h3>
+		<input class="title-text" value="{{title}}"/>
+	</div>
+	<div class="description">
+		<h3>Deck Description:</h3>
+		<textarea class="description-text">{{description}}</textarea>
+	</div>
+	<div class="bg-audio">
+		<h3>Background Music:</h3>
+		<input/>
+	</div>
+	<div class="auto-slide">
+		<h3>Auto-Slide:</h3>
+		<select class="auto-slide-select">
+			<option value=0>off</option>
+			<option value=2>2s</option>
+			<option value=4>4s</option>
+			<option value=6>6s</option>
+			<option value=8>8s</option>
+			<option value=10>10s</option>
+			<option value=15>15s</option>
+			<option value=30>30s</option>
+		</select>
+	</div>
+	<div class="auto-save">
+		<h3>Auto-Save:</h3>
+		<select class="auto-save-select">
+			<option value=0>off</option>
+			<option value=15>15s</option>
+			<option value=30>30s</option>
+			<option value=60>1min</option>
+			<option value=180 selected>3min</option>
+			<option value=300>5min</option>
+			<option value=600>10min</option>
+			<option value=900>15min</option>
+			<option value=1800>30min</option>
+		</select>
+	</div>
+	<div class="slide-well-scale">
+		<h3 style="display: inline-block">Slide-Well-Scale</h3>
+		<span class="tooltip-text">(Hold 'Ctrl' and scroll wheel to change scale)</span></br>
+		<div class="slidewell-scale"></div>
+		<span class="slidewell-scale-value"></span>
+	</div>
+</div>
+<div class="modal-footer">
+	<button class="btn cancel">cancel</button>
+	<button class="btn ok">Ok</button>
+</div>

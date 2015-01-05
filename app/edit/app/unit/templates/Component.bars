@@ -1,0 +1,2 @@
+<div class="content" style="border:{{border.width}}px {{border.style}} {{border.color}}; border-radius: {{border.radius}}px; opacity: {{opacity}};"></div>
+<div class="component-tool"></div>

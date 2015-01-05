@@ -1,0 +1,42 @@
+{{#.}}
+	<div class="deckItem" index="{{@index}}" data-id="{{_id}}">
+		<div class="itemHeader">
+		</div>
+		<div class="itemBodyer">
+			<div class="display">
+				<span class="delete"></span>
+				<span class={{#if outward}}"cloud-icon-cancelShare" title="取消公开"{{else}}"cloud-icon-share" title="公开"{{/if}}/>
+				<span class="edit"></span>
+				<span class="moveTo">
+					<a class="dropdown-toggle move" data-toggle="dropdown"></a>
+					<ul class="dropdown-menu">
+						<div class="moveToBar">移动到...</div>
+						<li class="divider"></li>
+						<div class="moveToList">
+						</div>
+					</ul>
+				</span>
+			</div>
+			<img src="{{#if picture}}{{picture}}{{else}}styles/img/default.jpg{{/if}}">
+			<i class="tagSwitch"></i>
+			<div class="tag-bar">
+				{{#each tags}}
+				<span class="tag" title="{{this}}">{{this}}
+					<span class="delete-btn">x</span>
+				</span>
+				{{/each}}
+				<span class="inputTag">
+					<input type="text" pattern="[^?!@#$%\\^&*(),\n\s，]+" maxlength="5"></input>
+				</span>
+				<span class="tag addTag">+</span>
+			</div>
+		</div>
+		<div class="itemFooter">
+			<div class="filename" title="{{filename}}" data-toggle="tooltip" data-placement="bottom">{{showFilename}}</div>
+			<div class="last_modified">
+				<i class="last-modified-icon"></i>
+				<span class="timeDetail">{{last_modified}}</span>
+			</div>
+		</div>
+	</div>
+{{/.}}

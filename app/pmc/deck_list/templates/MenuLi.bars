@@ -1,0 +1,3 @@
+{{#.}}
+	<li class="classify" id="{{_id}}"><a>{{folderName}}</a></li>
+{{/.}}

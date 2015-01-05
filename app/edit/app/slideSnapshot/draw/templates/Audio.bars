@@ -1,0 +1,6 @@
+{{#attributes}}
+{{> ComponentContainer}}
+<img style="width: 220px; height: 220px; {{#if bgsound}}opacity: 0{{/if}}" src="edit/styles/img/player.png"></img>
+</div>
+</div>
+{{/attributes}}

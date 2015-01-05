@@ -1,0 +1,24 @@
+{{#.}}
+	<div class="deckItem" index="{{@index}}" data-id="{{_id}}">
+		<div class="itemHeader">
+			<span class="cloud-icon"/>
+			<span class="filename" title="{{filename}}" data-toggle="tooltip" data-placement="top">{{showFilename}}</span>
+			<span class="delete"></span>
+		</div>
+		<div class="itemBodyer">
+			<div class="restore"/>
+			<img src="{{#if picture}}{{picture}}{{else}}styles/img/default.jpg{{/if}}">
+		</div>
+		<div class="itemFooter">
+			<div class="moveTo">
+				<a class="dropdown-toggle move" data-toggle="dropdown"></a>
+				<ul class="dropdown-menu moveToList">
+					<div class="moveToBar">恢复到...</div>
+					<li class="divider"></li>
+					<div class="moveToList">
+					</div>
+				</ul>
+			</div>
+		</div>
+	</div>
+{{/.}}

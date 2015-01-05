@@ -1,0 +1,12 @@
+{{#attributes}}
+<div class="edit-tool-list">
+	<div class="tool-select">
+		<span class="shape-content">{{{content}}}</span>
+		<span class="shape-replace">replace</span>
+	</div>
+	<div class="tool-shape-color">
+		<div class="tool-content">图形颜色:</div>
+		<div class="color-pick-trigger" data-nature="color" style="background:{{color}}"></div>
+	</div>
+</div>
+{{/attributes}}

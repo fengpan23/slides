@@ -1,0 +1,15 @@
+{{#attributes}}
+<div class="edit-tool-list">
+	<div class="tool-href">
+		<input type="input" value="{{src}}" placeholder="please input url"/>
+	</div>
+	<div class="tool-visit-switch">
+		<div class="tool-content">Visit:</div>
+		<div class="switch">
+			<input type="checkbox" name="toggle">
+			<label for="toggle"><i></i></label>
+			<span></span>
+	   </div>
+	</div>
+</div>
+{{/attributes}}

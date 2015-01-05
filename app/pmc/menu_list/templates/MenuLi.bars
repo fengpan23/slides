@@ -1,0 +1,5 @@
+{{#.}}
+<li data-type="{{folderName}}" class="classify" id="{{_id}}">{{folderName}}
+	<span class="deck-number">{{numberFiles}}</span>
+</li>
+{{/.}}

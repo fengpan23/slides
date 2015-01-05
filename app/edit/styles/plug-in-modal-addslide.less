@@ -1,0 +1,38 @@
+.add-slide-btn{
+	position: absolute; 
+	left: 50%;
+	height: 46px;
+	width: 46px;
+	margin-left: -23px;
+	text-align: center;
+	color: white;
+	background: #ccc;
+	z-index: 10;
+	opacity: .4; 
+	cursor: pointer;
+	border-radius: 50%;
+	box-sizing: content-box;
+	transition: all 0.25s ease;
+	user-select: none;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+.add-slide-btn.top{
+	top: -23px;
+	line-height: 68px;
+	opacity: .2;
+	&:hover{
+		top: 0;
+		opacity: .8;
+		line-height: 46px;
+	}
+}
+.add-slide-btn.bottom{
+	bottom: -23px;
+	line-height: 23px;
+	opacity: .2;
+	&:hover{
+		bottom: 0;
+		opacity: .8;
+		line-height: 46px;
+	}
+}

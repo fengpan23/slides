@@ -1,0 +1,224 @@
+@keyframes top-in{
+    from {
+        top: -800px;
+        opacity: 0;
+    }
+    to {
+        top: 50px;
+        opacity: 1;
+    }
+}
+@-moz-keyframes top-in{
+    from {
+        top: -800px;
+        opacity: 0;
+    }
+    to {
+        top: 50px;
+        opacity: 1;
+    }
+}
+@-webkit-keyframes top-in{
+    from {
+        top: -800px;
+        opacity: 0;
+    }
+    to {
+        top: 50px;
+        opacity: 1;
+    }
+}
+@-o-keyframes top-in{
+    from {
+        top: -800px;
+        opacity: 0;
+    }
+    to {
+        top: 50px;
+        opacity: 1;
+    }
+}
+.top-in {
+    animation:top-in .5s ease .2s both;
+    -webkit-animation: top-in .5s ease .2s both;
+    -moz-animation: top-in .5s ease .2s both;
+    -o-animation: top-in .5s ease .2s both;
+}
+@keyframes top-out{
+    from {
+        opacity: 1;
+        top: 50px;
+    }
+    to {
+        opacity: 0;
+        top: -800px;
+    }
+}
+@-moz-keyframes top-out{
+    from {
+        opacity: 1;
+        top: 50px;
+    }
+    to {
+        opacity: 0;
+        top: -800px;
+    }
+}
+@-webkit-keyframes top-out{
+    from {
+        opacity: 1;
+        top: 50px;
+    }
+    to {
+        opacity: 0;
+        top: -800px;
+    }
+}
+@-o-keyframes top-out{
+    from {
+        opacity: 1;
+        top: 50px;
+    }
+    to {
+        opacity: 0;
+        top: -800px;
+    }
+}
+.top-out {
+    animation:top-out .5s ease .2s both;
+    -webkit-animation: top-out .5s ease .2s both;
+    -moz-animation: top-out .5s ease .2s both;
+    -o-animation: top-out .5s ease .2s both;
+}
+@keyframes left-in{
+    from {
+        left: 15%;
+        opacity: 0;
+        top: 50px;
+    }
+    to {
+        left: 50%;
+        opacity: 1;
+        top: 50px;
+    }
+}
+@-moz-keyframes left-in{
+    from {
+        left: 15%;
+        opacity: 0;
+        top: 50px;
+    }
+    to {
+        left: 50%;
+        opacity: 1;
+        top: 50px;
+    }
+}
+@-webkit-keyframes left-in{
+    from {
+        left: 15%;
+        opacity: 0;
+        top: 50px;
+    }
+    to {
+        left: 50%;
+        opacity: 1;
+        top: 50px;
+    }
+}
+@-o-keyframes left-in{
+    from {
+        left: 15%;
+        opacity: 0;
+        top: 50px;
+    }
+    to {
+        left: 50%;
+        opacity: 1;
+        top: 50px;
+    }
+}
+.left-in {
+    animation:left-in .5s ease .2s both;
+    -webkit-animation: left-in .5s ease .2s both;
+    -moz-animation: left-in .5s ease .2s both;
+    -o-animation: left-in .5s ease .2s both;
+}
+@keyframes left-out{
+    from {
+        opacity: 1;
+        top: 50px;
+    }
+    to {
+        opacity: 0;
+        left: -50%;
+        top: 50px;
+    }
+}
+@-moz-keyframes left-out{
+    from {
+        opacity: 1;
+        top: 50px;
+    }
+    to {
+        opacity: 0;
+        left: -50%;
+        top: 50px;
+    }
+}
+@-webkit-keyframes left-out{
+    from {
+        opacity: 1;
+        top: 50px;
+    }
+    to {
+        opacity: 0;
+        left: -50%;
+        top: 50px;
+    }
+}
+@-o-keyframes left-out{
+    from {
+        opacity: 1;
+        top: 50px;
+    }
+    to {
+        opacity: 0;
+        left: -50%;
+        top: 50px;
+    }
+}
+.left-out {
+    animation:left-out .5s ease .2s both;
+    -webkit-animation: left-out .5s ease .2s both;
+    -moz-animation: left-out .5s ease .2s both;
+    -o-animation: left-out .5s ease .2s both;
+}
+
+
+
+
+@-webkit-keyframes gradatim-in{
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-webkit-keyframes gradatim-out{
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.modal-backdrop{
+    -webkit-animation-name: gradatim-in;
+    -webkit-animation-duration: .5s;
+    -webkit-animation-delay: .2s;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-fill-mode: both;
+}
+

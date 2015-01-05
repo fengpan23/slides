@@ -1,0 +1,16 @@
+{{#attributes}}
+<div class="edit-tool-list">
+	<div class="tool-text-color">
+		<div class="tool-content">字体颜色:</div>
+		<div class="color-pick-trigger" data-nature="textColor" style="background:{{textColor}}"></div>
+	</div>
+	<div class="tool-background-color">
+		<div class="tool-content">背景颜色:</div>
+		<div class="color-pick-trigger" data-nature="bgColor" style="background:{{bgColor}}"></div>
+	</div>
+	<div class="tool-linespacing">
+		<div class="tool-content">行间距:</div>
+		<div class="linespacing-value icon-chevron-down" data-nature="lineSpacing">{{#if lineSpacing}}{{lineSpacing}}{{else}}normal{{/if}}</div>
+	</div>
+<div>
+{{/attributes}}

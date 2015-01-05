@@ -1,0 +1,117 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot?cmwv6d');
+	src:url('fonts/icomoon.eot?#iefixcmwv6d') format('embedded-opentype'),
+		url('fonts/icomoon.woff?cmwv6d') format('woff'),
+		url('fonts/icomoon.ttf?cmwv6d') format('truetype'),
+		url('fonts/icomoon.svg?cmwv6d#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-music:before {
+	content: "\e605";
+}
+.icon-chart:before {
+	content: "\e615";
+}
+.icon-picture:before {
+	content: "\e601";
+}
+.icon-film:before {
+	content: "\e602";
+}
+.icon-text:before {
+	content: "\e603";
+}
+.icon-website:before {
+	content: "\e604";
+}
+.icon-setting:before {
+	content: "\f02f";
+}
+.icon-share:before {
+	content: "\f020";
+}
+.icon-play:before {
+	content: "\f0bf";
+}
+.icon-quill:before {
+	content: "\e607";
+}
+.icon-save:before {
+	content: "\e608";
+}
+.icon-undo:before {
+	content: "\e609";
+}
+.icon-redo:before {
+	content: "\e60a";
+}
+.icon-expand:before {
+	content: "\e618";
+}
+.icon-contract:before {
+	content: "\e619";
+}
+.icon-unordered-list:before {
+	content: "\e611";
+}
+.icon-ordered-list:before {
+	content: "\e612";
+}
+.icon-link:before {
+	content: "\e613";
+}
+.icon-arrow-up:before {
+	content: "\e616";
+}
+.icon-arrow-down:before {
+	content: "\e617";
+}
+.icon-bold:before {
+	content: "\e600";
+}
+.icon-underline:before {
+	content: "\e606";
+}
+.icon-italic:before {
+	content: "\e60b";
+}
+.icon-strikethrough:before {
+	content: "\e60c";
+}
+.icon-paragraph-left:before {
+	content: "\e60d";
+}
+.icon-paragraph-center:before {
+	content: "\e60e";
+}
+.icon-paragraph-right:before {
+	content: "\e60f";
+}
+.icon-paragraph-justify:before {
+	content: "\e610";
+}
+.icon-reload:before {
+	content: "\e614";
+}
+.icon-chevron-down:after {
+	content: "\f0a3";
+	float: right;
+	margin-right: 5px;
+}

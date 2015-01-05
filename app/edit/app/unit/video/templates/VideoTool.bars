@@ -1,0 +1,10 @@
+<div class="edit-tool-list">
+	<div class="tool-opacity">
+		<div class="tool-content">透明度</div>
+		<div></div>
+	</div>
+	<div class="tool-border">
+		<div class="tool-content">边框</div>
+		<div></div>
+	</div>
+<div>

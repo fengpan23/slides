@@ -1,0 +1,27 @@
+{{#attributes}}
+<div class="edit-tool-list">
+	<div class="tool-import">
+		<div class="tool-content">File:</div>
+		<div class="import-content">
+			<input type="file" title="upload file" accept="audio/*"/>
+			<span class="change-audio-btn">upload</span>
+			<span class="filename"></span>
+			<span class="upload-progress"></span>
+		</div>
+	</div>
+	<div class="tool-search">
+		<div class="tool-content">Search:</div>
+		<div class="search-content">
+			<input accept="audio/*"/>
+		</div>
+	</div>
+	<div class="tool-bg-music-switch">
+		<div class="tool-content">As bgsound:</div>
+		<input type="checkbox" {{#if bgsound}}checked{{/if}}/>
+	</div>
+	<div class="tool-loop-switch">
+		<div class="tool-content">Loop:</div>
+		<input type="checkbox" {{#if loop}}checked{{/if}}/>
+	</div>
+</div>
+{{/attributes}}

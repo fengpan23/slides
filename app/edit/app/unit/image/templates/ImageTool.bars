@@ -1,0 +1,18 @@
+{{#attributes}}
+<div class="edit-tool-list">
+	<div class="tool-import">
+		<div class="status">
+			<span class="import">
+				<span class="icon-picture"></span>
+				<span class="upload-btn">upload</span>
+				<input type="file" title="click upload file" accept="image/*"/>
+			</span>
+			<span class="progress"></span>
+			<span class="replace"></span>
+		</div>
+		<div class="content">
+			<img src="{{src}}"/>
+		</div>
+	</div>
+</div>
+{{/attributes}}

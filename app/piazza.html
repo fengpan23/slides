@@ -1,0 +1,163 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+		<META HTTP-EQUIV="Cache-Control" CONTENT="max-age=0">
+		<META HTTP-EQUIV="Cache-Control" CONTENT="no-cache">
+		<META HTTP-EQUIV="expires" CONTENT="0">
+		<META HTTP-EQUIV="Expires" CONTENT="Tue, 01 Jan 1980 1:00:00 GMT">
+		<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+		<title>Cloud - Courseware</title>
+
+		<link rel="stylesheet" href="piazza/styles/main.css"/>
+
+		<!-- build:js piazza/main.js -->
+		<script src="scripts/libs/jQuery.js"></script>
+		<script src="piazza/main.js"></script>
+		<!-- endbuild -->
+	</head>
+	<body>
+		<div id="models">
+			<div class="preview-bar">
+				<a class="preview-name" name="previewname"></a>
+				<iframe src=""></iframe>
+				<span class="fullscreen"></span>
+				<span class="toolbar" data-id="">
+					<span class="collect" title="收藏">
+						<div class="collect-bar">
+							<div class="message"></div>
+							<div class="collect-type">
+						收藏到: <select name="type" class="folders">
+								</select>
+							</div>
+							<button class="collect-btn">收藏</button><button class="cancel">取消</button>
+						</div>
+					</span>
+					<!-- <span class="share" title="分享">
+						<div class="share-bar">
+							<div class="message"></div>
+							<div>分享课件</div>
+							<div>Email: <input type="text" name="toEmail"/></div>
+							<button class="share-btn">分享</button><button class="cancel">取消</button>
+						</div>
+					</span> -->
+					<span class="love" title="喜欢">
+						<i class="loveing">+1</i>
+					</span>
+					<span class="report" title="举报">
+						<div class="report-bar">
+							<div class="message"></div>
+							<div class="report-title">举报课件</div>
+							<div class="report-type">
+								<select name="type">
+								  <option value ="暴力">暴力</option>
+								  <option value ="色情">色情</option>
+								  <option value ="其它">其它</option>
+								</select>
+							</div>
+							<div class="report-text">
+								<textarea name="message" placeholder="   举  报  理  由 ......"></textarea>
+							</div>
+							<button class="report-btn">提交</button><button class="cancel">取消</button>
+						</div>
+					</span>
+				</span>
+				<div class="close-btn"></div>
+				<div class="pre-page"></div>
+				<div class="next-page"></div>
+				<div class="pageIndex"></div>
+				<div class="comments-bar">
+					<!-- <div class="comments-menu">
+						<a href="#" class="comments-add">添加评论</a>
+						<a href="#" class="comments-read">查看评论</a>
+					</div> -->
+					<div class="comments-message">您还没有登录~！</div>
+					<div class="comments-input">
+						<textarea placeholder="添加评论....."></textarea>
+						<button class="comment-btn">评论</button>
+					</div>
+					<div class="comments-show"></div>
+					<a href="#previewname" class="back-top" title="回到顶部"></a>
+				</div>
+			</div>
+		</div>
+		<header>
+			<div class="logo"></div>
+			<div class="login-bar">
+				<a class="btn" href="/login">登陆</a>
+				<div class="logged">
+					<span class="username"></span>
+					<ul class="usermenu">
+						<li><a href="pmc.html" target="_parent">进入个人中心</a></li>
+						<li><a class="type" href="#" data-type="user">我的分享</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="theme" title="换装">
+				<span class="theme-ico" data-index="0"/>
+			</div>
+		</header>
+		<div class="side-tag">
+			<ul class="list-tag">
+			  <!-- <li>
+			    <h2 class="title">全部</h2>
+			    <a class="type" href="#" data-type="new">最新</a>
+			    <a class="type" href="#" data-type="hot">最热</a>
+			    <a class="type" href="#" data-type="comment">最多评论</a>
+			  </li> -->
+			  <li>
+			    <h2 class="title">科目</h2>
+			    <a class="type" href="#" data-type="Chinese">语文</a>
+			    <a class="type" href="#" data-type="Math">数学</a>
+			    <a class="type" href="#" data-type="English">英语</a>
+			    <a class="type" href="#" data-type="Art">美术</a>
+			  </li>
+			  <li>
+			    <h2 class="title">时间</h2>
+			    <a class="type" href="#" data-type="1">近一天</a>
+			    <a class="type" href="#" data-type="3">近三天</a>
+			    <a class="type" href="#" data-type="7">近一周</a>
+			    <a class="type" href="#" data-type="15">近二周</a>
+			    <a class="type" href="#" data-type="30">近一个月</a>
+			    <a class="type" href="#" data-type="90">近三个月</a>
+			    <a class="type" href="#" data-type="180">近半年个月</a>
+			  </li>
+			<!--   <li>
+			    <h2 class="title">文化艺术</h2>
+			    <a class="type" href="#" data-type="design">艺术设计</a>
+			    <a class="type" href="#" data-type="photo">图片摄影</a>
+			    <a class="type" href="#" data-type="culture">文化</a>
+			    <a class="type" href="#" data-type="literature">文学</a>
+			    <a class="type" href="#" data-type="book">书籍</a>
+			  </li> -->
+			<!--   <li>
+			    <h2 class="title">其他</h2>
+			    <a class="type" href="#" data-type="complex">综合</a>
+			    <a class="type" href="#" data-type="news">新闻</a>
+			    <a class="type" href="#" data-type="resume">简历</a>
+			    <a class="type" href="#" data-type="cards">贺卡</a>
+			    <a class="type" href="#" data-type="log">日志</a>
+			  </li> -->
+			</ul>
+		</div>
+		<div class="main-part">
+			<div class="main-top">
+				<div class="title-bar"></div>
+				<div class="search-bar">
+					<input type="text" class="btn" placeholder="搜     索     课     件"/>
+					<a class="btn search">搜索</a>
+				</div>
+			</div>
+			<div class="menu-bar">
+				<input type="radio" name="menu" value="outwardTime" checked="checked">最新</input>
+				<input type="radio" name="menu" value="favtimes">最热</input> 
+			</div>
+			<div class="list-bar"></div>
+			<div class="paging-bar">
+			</div>
+		</div>
+		<footer>
+			领新教育@版权所有
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,20 @@
+<div class="container">
+	<div class="header_left">
+		<div class="logo">
+			<a href="/piazza.html" target="_parent" title="主页"></a>
+		</div>
+		<div class="inform">
+			<span class="inform-ico"></span>通知:
+		</div>
+	</div>
+	<div class="header_right">
+		<div class="user_message">
+			<span class="user"></span>
+			<span class="userDrop-ico" data-toggle="dropdown"></span>
+			<ul class="dropdown-menu">
+				<li><a class="logout" href="/logout">退出登陆</a></li>
+			</ul>
+		</div>
+		<div class="setting"></div>
+	</div>
+</div>

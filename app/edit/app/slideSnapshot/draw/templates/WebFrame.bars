@@ -1,0 +1,6 @@
+{{#attributes}}
+{{> ComponentContainer}}
+<div class="icon-website" style="font-size:{{height}}px; width:{{width}}px"></div>
+</div>
+</div>
+{{/attributes}}

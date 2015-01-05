@@ -1,0 +1,49 @@
+{{#attributes}}
+<div class="tool-opacity">
+	<div class="tool-content">透明度:<span class="opacity-value">{{opacity}}%</span></div>
+	<div class="tool-slider"></div>
+</div>
+<div class="tool-border">
+	<div class="tool-content">边框<span class="border-switch">></span></div>
+	<div class="border-property">
+		<div class="tool-content">宽度:</div>
+		<div class="stepper">
+			<input type="text" class="stepper-munber" data-nature="border.width" value="{{border.width}}px"/>
+		</div>
+		<div class="tool-content">样式:</div>
+		<div class="stepper">
+			<div class="border-style-select-trigger icon-chevron-down">{{border.style}}</div>
+		</div>
+		<div class="tool-content">颜色:</div>
+		<div class="stepper">
+			<div class="color-pick-trigger" data-nature="border.color" style="background: {{border.color}};"></div>
+		</div>
+		<div class="tool-content">边角半径:</div>
+		<div class="stepper">
+			<input type="text" class="stepper-munber" data-nature="border.radius" value="{{border.radius}}px"/>
+		</div>
+	</div>
+</div>
+<div class="tool-depth">
+	<div class="tool-content">Depth:</div>
+	<div class="depth-option-btn">
+		<div class="item-btn depth-down">
+			<span class="icon-arrow-down"></span>
+		</div>
+		<div class="item-btn depth-up">
+			<span class="icon-arrow-up"></span>
+		</div>
+	</div>
+</div>
+<div class="tool-action">
+	<div class="tool-content">Action:</div>
+	<div class="action-option-btn">
+		<div class="item-btn action-expand">
+			<span class="icon-expand"></span>
+		</div>
+		<div class="item-btn action-contract">
+			<span class="icon-contract"></span>
+		</div>
+	</div>
+</div>
+{{/attributes}}

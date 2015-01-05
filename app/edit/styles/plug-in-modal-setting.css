@@ -1,0 +1,63 @@
+#modals .setting .modal-body {
+  margin-left: 65px;
+}
+#modals .setting .modal-body select {
+  position: relative;
+  line-height: 1.6;
+  padding-right: 26px;
+  color: #222;
+  border: 1px solid #bbbbbb;
+  border-radius: 2px;
+  box-shadow: 0;
+  cursor: pointer;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  padding: 8px 12px;
+  width: 120px;
+}
+#modals .setting .modal-body .title .title-text {
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #fff;
+  height: auto;
+  padding: 16px;
+  font-size: 1.2em;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  -webkit-appearance: none;
+}
+#modals .setting .modal-body .description .description-text {
+  width: 75%;
+  background-color: #fff;
+  line-height: 1.4em;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  -webkit-appearance: none;
+  overflow: auto;
+  vertical-align: top;
+  box-sizing: border-box;
+}
+#modals .setting .modal-body .auto-slide {
+  float: left;
+  margin-right: 20%;
+}
+#modals .setting .modal-body .auto-save {
+  display: inline-block;
+}
+#modals .setting .modal-body .slide-well-scale {
+  margin-bottom: 5px;
+}
+#modals .setting .modal-body .slide-well-scale .slidewell-scale {
+  float: left;
+  width: 60%;
+  margin-left: 10px;
+}
+#modals .setting .modal-body .slide-well-scale .tooltip-text {
+  font-size: 12px;
+  color: #9b9b9b;
+}
+#modals .setting .modal-body .slide-well-scale .slidewell-scale-value {
+  margin-left: 15px;
+}

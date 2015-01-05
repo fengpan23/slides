@@ -1,0 +1,10 @@
+{{#attributes}}
+{{> ComponentContainer}}
+<div class="antialias" style="width:{{{width}}}px; color: {{{textColor}}}; background:{{{bgColor}}}; line-height:{{{lineSpacing}}}; opacity: {{{opacity}}}; border: {{{border.width}}}px {{{border.style}}} {{{border.color}}}; border-radius: {{{border.radius}}}px;">
+{{#if link}}<a href="/preview_export/impress.html#/step-{{link}}">{{/if}}
+{{{text}}}
+{{#if link}}</a>{{/if}}
+</div>
+</div>
+</div>
+{{/attributes}}

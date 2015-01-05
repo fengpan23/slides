@@ -1,0 +1,19 @@
+<div class="searchBar">
+	<input type="text" placeholder="搜   索   课   件"/>
+	<input type="button" value="搜索"/>
+</div>
+<div class="listState">
+	<span class="stateContent">所有课件</span>
+</div>
+<div class="expandMenu">
+	<div class="import" title="导入课件"></div>
+	<div class="moreFeatures">
+		<a class="dropdown-toggle more" data-toggle="dropdown"></a>
+		<ul class="dropdown-menu">
+			<li class="deleteFolder"><a>删除文件夹</a></li>
+			<li class="sortDeck" sort-type="filename" des="1"><a>按文件名排序</a></li>
+			<li class="sortDeck" sort-type="last_modified" des="1"><a>按时间排序</a></li>
+			<li class="disabled"><a>导入课件</a></li>
+		</ul>
+	</div>
+</div>

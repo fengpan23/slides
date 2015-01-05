@@ -1,0 +1,4 @@
+<div class="unit-btn" data-type="{{type}}">
+	<div class="{{icon}}"></div>
+	<div>{{text}}</div>
+</div>

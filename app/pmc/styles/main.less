@@ -1,0 +1,848 @@
+@headerHeight: 60px;
+@left_bodyWidth: 240px;
+@footer_container: 35px;
+@mainColor: #F8F8F8;
+@textColor: #000000;
+@boxShadow: #afafaf;
+@boderColor: #D5D5D5;
+@inverseColor: rgb(98,196,98);
+
+#models{
+	@previewWidth: 768px;
+	.modal{
+		top: 25%;
+	}
+	.preview{
+		width: @previewWidth;
+		margin-left: @previewWidth/-2;
+		.preview_header{
+		    height: 40px;
+		    background: @mainColor;
+		    position: relative;
+		    color: @inverseColor;
+		    .cloud-icon{
+		    	background: url(img/icon-cloud.png);
+		    	width: 75px;
+				height: 100%;
+				float: left;
+				background-position: center;
+				background-repeat: no-repeat;
+		    }
+		    .filename{
+		    	line-height: 40px;
+		    }
+		    .playIndex{
+		    	position: absolute;
+		    	right: 40px;
+		    	width: 80px;
+				line-height: 40px;
+		    }
+		    .close{
+		    	margin: 10px;
+		    }
+		}
+		.preview_bodyer{
+			height: 420px;
+			margin-right: 1px;
+			position: relative;
+			overflow: hidden;
+			iframe{
+				border: 0px;
+				width: 770px;
+				height: 420px;
+			}
+			.previous_page{
+				width: 10%;
+				height: 100%;
+				position: absolute;
+				top: 0px;
+			}
+			.next_page{
+				width: 10%;
+				height: 100%;
+				position: absolute;
+				top: 0px;
+				right: 0px;
+			}
+		}
+		.preview_footer{
+			height: 38px;
+			background: @mainColor;
+			.jumpBar{
+				width: 120px;
+				height: 30px;
+				float: right;
+				background: @inverseColor;
+				opacity: 0.8;
+				border-radius: 120px;
+				margin-top: 5px;
+				color: white;
+				padding: 0px 10px;
+				input{
+					color: white;
+					outline: none;
+					text-align: center;
+				}
+				input[type="text"]{
+					width: 25px;
+					background: inherit;
+					padding: 0px;
+					border-bottom-color: white;
+					border-top-width: 0px;
+					border-right-width: 0px;
+					border-left-width: 0px;
+					border-bottom-width: 2px;
+				}
+				input[type="button"]{
+					width: 35px;
+					border-radius: 120px;
+					border: 0px;
+					background: white;
+					float: right;
+					margin-top: 3px;
+					color: @inverseColor;
+				}
+			}
+		}
+	}
+	.addDeck{
+		.tool-title{
+			i{
+				background: url(img/new1.png);
+				width: 40px;
+				height: 40px;
+				display: inline-block;
+				margin-right: 10px;
+			}
+			margin-left: 130px;
+		}
+		input{
+			border-radius: 12px;
+		}
+		form{
+			margin: 0px;
+			.filenameBar{
+				margin-top: 12px;
+			}
+			.typeBar{
+				margin-top: 12px;
+				select{
+					border-radius: 12px;
+				}
+			}
+			.tagBar{
+				margin-top: 12px;
+				.message{
+					display: none;
+					color: red;
+				}
+			}
+		}
+		.modal-footer{
+			text-align: center;
+			padding: 10px;
+			input{
+				background: rgb(150, 229, 62);
+				color: white;
+				border: 0px;
+				width: 120px;
+				height: 30px;
+			}
+			.edit-icon{
+				width: 30px;
+				height: 30px;
+				position: absolute;
+				left: 220px;
+				background: url(img/new1.png);
+				background-position: -48px -8px;
+			}
+		}
+	}
+	.modal-body{
+		text-align: center;
+	}
+}
+.header_container{
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	height: @headerHeight;
+	width: 100%;
+	z-index: 1000;
+	background-color: @mainColor;
+	border: 1px solid rgb(235, 235, 235);
+	.header_left{
+		position: absolute;
+		width: 30%;
+		height: 100%;
+		.logo{
+			position: absolute;
+			background-image: url(img/logo.png);
+			width: 180px;
+			height: 100%;
+			background-repeat: no-repeat;
+			background-position: center;
+			a{
+				width: 100%;
+				height: 100%;
+				display: block;
+			}
+		}
+		.inform{
+			position: absolute;
+			left: 200px;
+			width: 80px;
+			line-height: 65px;
+			.inform-ico{
+				background: url(img/icon-pmc.png);
+				background-repeat: no-repeat;
+				background-position: -220px 2px;
+				width: 30px;
+				height: 25px;
+				display: inline-block;
+				&:hover{
+					background-position: -220px -30px;
+				}
+			}
+			
+		}
+	}
+	.header_right{
+		position: absolute;
+		right: 0px;
+		height: 100%;
+		width: 180px;
+		.user_message{
+			float: left;
+			height: 100%;
+			width: 80%;
+			.user{
+				overflow: hidden;
+				width: 120px;
+				height: 20px;
+				position: absolute;
+				top: 21px;
+				right: 80px;
+				text-align: right;
+				margin-right: 9px;
+			}
+			.userDrop-ico{
+				position: absolute;
+				top: 15px;
+				right: 50px;
+				background: url(img/icon-pmc.png);
+				background-position: -256px 0px;
+				display: inline-block;
+				width: 36px;
+				height: 36px;
+				&:hover{
+					background-position: -256px 32px;
+				}
+			}
+			.dropdown-menu{
+				text-align: center;
+				min-width: 130px;
+			}
+		}
+		.open{
+			.userDrop-ico{
+				background-position: -256px 32px;
+			}
+		}
+		.setting{
+			background: url(img/icon-pmc.png);
+			float: left;
+			width: 36px;
+			height: 36px;
+			background-position: -290px 4px;
+			margin-top: 11px;
+			&:hover{
+				background-position: -290px 36px;
+			}
+		}
+	}
+}
+.body_container{
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	top: 70px;
+	width: 960px;
+	bottom: 35px;
+	/* border-radius: 4px; */
+	background: #fff;
+	/* box-shadow: 0 3px 14px rgba(0,0,0,0.4); */
+	/*border: 1px solid rgb(242, 242, 242);	*/
+}
+.body_container .left_body{
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	z-index: 2;
+	width: @left_bodyWidth;
+	.pmc_menu{
+		cursor: pointer;
+		width: 100%;
+		border-right: 1px solid @boderColor;
+		>ul{
+			list-style: none;
+			margin-top: 20px;
+			>li{
+				height: 36px;
+				display: inline;
+				>i{
+					background: url(img/icon-pmc1.png);
+					background-repeat: no-repeat;
+					height: 36px;
+					width: 36px;
+					float: left;
+				}
+				div{
+					font-size: 20px;
+					line-height: 48px;
+					margin-left: 45px;
+					padding-left: 15px;
+					&:hover{
+						background-color: rgba(214,214,214,0.5);
+						.addClassify{
+							display: inline;
+						}
+					}
+				}
+				.addClassifyBar{
+					display: none;
+					position: absolute;
+					left: 80px;
+					input{
+						width: 120px;
+					}
+				}
+				.userFolder{
+					display: none;
+					text-align: left;
+					overflow-x: hidden;
+					color: #8B8B8B;
+				}
+				.default-ico{
+					background-position: 0px 0px;
+				}
+				.classify-ico{
+					background-position: -40px 0px;
+				}
+				.error{
+					width: 140px;
+					height: 40px;
+					display: none;
+					background: red;
+					position: absolute;
+					top: 20px;
+				}
+				.addClassify{
+					display: none;
+					background: url(img/icon-pmc.png);
+					width: 30px;
+					height: 30px;
+					position: absolute;
+					right: 15px;
+					background-position: -320px 6px;
+					&:hover{
+						background-position: -320px -26px;
+					}
+				}
+				.removed-ico{
+					background-position: -80px 0px;
+				}
+				.menuText{
+					margin-left: 35px;
+				}
+				>ul{
+					display: none;
+					margin-left: 45px;
+					>li{
+						line-height: 35px;
+						padding-left: 10px;
+						list-style-type: disc;
+						&:hover{
+							background-color: rgba(214,214,214,0.5);
+						}
+					}
+				}
+			}
+			.open{
+				ul{
+					display: block;
+				}
+			}
+			.active{
+				/*background-image: url(img/menuActive.png);*/
+				/*background-position: 130px;*/
+				/*background-repeat: no-repeat;*/
+				background: rgb(239, 239, 239);
+				.deck-number{
+					display: inline-block;
+				}
+			}
+			.deck-number{
+				display: none;
+				position: absolute;
+				right: 5px;
+				color: #CDCDCD;
+				font-size: 14px;
+			}
+		}
+	}
+	.pmc_tag{
+		width: 100%;
+		border: 1px solid @boderColor;
+		margin-top: 60px;
+		.tag-header{
+			color: white;
+			i{	
+				width: 30px;
+				height: 30px;
+				display: inline-block;
+				background: url(img/tag.png);
+				background-position: 0px -9px;
+			}
+			.tag-text{
+				position: absolute;
+				margin-left: 0px;
+				padding-left: 0px;
+				color: #6E6D6D;
+			}
+			.getTag{
+				float: right;
+				cursor: pointer;
+				color: #CCCCCC;
+				&:hover{
+					color: #747171;
+				}
+			}
+			button{
+				display: none;
+				float: right;
+				margin: 5px;
+				background: rgb(245, 245, 245);
+				border: 1px solid #C0C0C0;
+			}
+		}
+		.tagContainer{
+			min-height: 120px;
+			width: 100%;
+			span:nth-child(9n){color: #4A4A4A;}
+			span:nth-child(9n+1){color: #428BCA;}
+			span:nth-child(9n+2){color: #5CB85C;}
+			span:nth-child(9n+3){color: #D9534F;}
+			span:nth-child(9n+4){color: #567E95;}
+			span:nth-child(9n+5){color: #B433FF;}
+			span:nth-child(9n+6){color: #00ABA9;}
+			span:nth-child(9n+7){color: #B37333;}
+			span:nth-child(9n+8){color: #FF6600;}
+		}
+		span{
+			position: relative;
+			display: inline-block;
+			color: white;
+			padding: 2px 10px;
+			margin: 5px;
+			cursor: default;
+			input[type="checkbox"]{
+				display: none;
+				position: absolute;
+				top: -5px;
+				right: -2px;
+				width: 10px;
+				height: 10px;
+			}
+			/*&:hover{
+				border: 1px solid #71AC7A;
+				border-radius: 10px;
+				.delete-btn{
+					display:block;
+					left: -13px;
+				}	
+			}*/
+		}
+		.active{
+			position: relative;
+			border: 1px solid #71AC7A;
+			input[type="checkbox"]{
+				display:block;
+			}
+		}
+	}
+	&:hover{
+		.userFolder{
+			overflow-y: auto !important;
+		}
+	}
+}
+.body_container .main_content{
+	position: relative;
+	left: @left_bodyWidth;
+	width: 720px;
+	height: 100%;
+	.searchBar{
+		height: 80px;
+		line-height: 90px;
+		input{
+			padding: 0;
+			border: 1px solid @boderColor;
+			border-radius: 0;
+		}
+		input[type="text"]{
+			height: 30px;
+			width: 550px;
+			margin-right: 4px;
+			margin-left: 50px;
+			padding-left: 15px;
+			text-align: center;
+			&:focus{
+				box-shadow: 0 0 1px 1px @boderColor;
+			}
+		}
+		input[type="button"]{
+			position: absolute;
+			top: 25px;
+			height: 32px;
+			width: 60px;
+			background: none;
+			&:hover{
+				box-shadow: 0 0 1px 1px @boderColor;
+			}
+		}
+	}
+	.listState{
+		margin-top: 20px;
+		margin-left: 15px;
+		width: 80%;
+		span{
+			font-size: 40px;
+		}
+	}
+	.expandMenu{
+		position: absolute;
+		right: 0px;
+		top: 110px;
+		width: 120px;
+		height: 30px;
+		z-index: 100;
+		.import{
+			width: 35px;
+			height: 30px;
+			float: left;
+			background: url(img/icon-pmc.png);
+			background-position: -190px -5px;
+			&:hover{
+				background-position: -190px -36px;
+			}
+		}
+		.moreFeatures{
+			.more{
+				background: url(img/icon-pmc.png);
+				float: left;
+				width: 32px;
+				height: 30px;
+				background-position: -164px -2px;
+				&:hover{
+					background-position: -163px -34px;
+				}
+			}
+			ul{
+				min-width: 100px;
+				text-align: center;
+				left: -10px;
+			}
+		}
+		.open{
+			.more{
+				background-position: -163px -34px;
+			}
+		}
+	}
+	.deck_list{
+		overflow: auto;
+		position: absolute;
+		bottom: 0px;
+		top: 130px;
+		left:0;
+		right:0;
+		padding-top: 30px;
+		margin-left: 40px;
+		> div{
+			position: relative;
+			float: left;
+			text-align: center;
+			margin: 10px;
+			width: 300px;
+			height: 252px;
+		}
+		.newDeck{
+			background: url(img/new.png) center center no-repeat;
+			border: 1px dashed #d5d5d5;
+			&:hover{
+				border: 1px dashed #62c462;
+			}
+		}
+		.deckItem{
+			border: 1px solid @boderColor;
+			&:hover{
+				box-shadow: 0 0 2px 2px @boderColor;
+			}
+			img{
+				width: 100%;
+				height: 168px;
+			}
+			.itemHeader{
+				display: none;
+			}
+			.itemBodyer{
+				margin-bottom: 3px;
+				.display{
+					display: none;
+					width: 100%;
+					height: 100%;
+					background: url(img/show.png) no-repeat 50% 35%;
+					background-color: rgba(127,127,127,0.7);
+					position: absolute;
+					> span{
+						position: absolute;
+						top: 70%;
+						width: 30px;
+						height: 30px;
+						float: left;
+						background-image: url(img/icon-pmc.png);
+						border: 1px solid @boderColor;
+					}
+					.delete{
+						left: 20px;
+						background-position: -35px -4px;
+						background-color: white;
+						&:hover{
+						    background-position: -35px -35px;
+						}
+					}
+					.cloud-icon-cancelShare{
+						left: 220px;
+						background-color: white;
+						background-position: -355px -4px;
+						&:hover{
+						    background-position: -355px -37px;
+						}
+					}
+					.cloud-icon-share{
+						left: 220px;
+						background-color: white;
+						background-position: -385px -4px;
+						&:hover{
+						    background-position: -385px -37px;
+						}
+					}
+					.edit{
+						left: 180px;
+						background-color: white;
+						background-position: -130px -5px;
+						&:hover{
+						    background-position: -130px -37px;
+						}
+					}
+					.moveTo{
+						left: 140px;
+						background-position: -95px -3px;
+						background-color: white;
+						&:hover{
+						    background-position: -95px -35px;
+						}
+						.move{
+							width: 100%;
+							height: 100%;
+							display: block;
+						}
+						.moveToList{
+							margin-right: 2px;
+							max-height: 180px;
+							overflow-y: overlay;
+							.no-file{
+								margin: 5px;
+								color: rgb(190, 188, 183);
+							}
+							button{
+								background: none;
+								border: 1px solid rgb(192, 187, 187);
+							}
+						}
+						ul{
+							min-width: 100px;
+							.divider{
+								margin: 2px 1px;
+							}
+						}
+					}
+				}
+				.restore{
+					display: none;
+					width: 100%;
+					height: 131px;
+					background: url(img/restore.png) no-repeat center center;
+					background-color: rgba(127,127,127,0.7);
+					position: absolute;
+					top: 20px;
+				}
+				&:hover{
+					.display{
+						display: block;
+					}
+					.restore{
+						display: block;
+					}
+				}
+				.tag-bar{
+					display: none;
+					position: absolute;
+					height: 130px;
+					z-index: 10;
+					width: 40%;
+					top: 0px;
+					overflow: hidden;
+					.tag{
+						position: relative;
+						display: block;
+						border-radius: 20px;
+						margin-top: 5px;
+						color: rgb(116, 116, 116);
+						background: rgba(221, 221, 221,0.5);
+						&:hover{
+							.delete-btn{
+								display: block;
+							}
+						}
+					}
+					.addTag{
+						color: white;
+					}
+					.inputTag{
+						display: none;
+						>input{
+							height: 10px;
+							width: 80%;
+							border-radius: 20px;
+							margin-bottom: 0px;
+							margin-top: 5px;
+						}
+					}
+				}
+				.tagSwitch{
+					position: absolute;
+					width: 20px;
+					height: 20px;
+					top: 0px;
+					left: 5px;
+					z-index: 10;
+					background: url(img/tag.png);
+					background-position: 50px 20px;
+				}
+				.openedTag{
+					position: absolute;
+					width: 20px;
+					height: 20px;
+					top: 0px;
+					left: 120px;
+					z-index: 10;
+					background: url(img/tag.png);
+					background-position: 20px 20px;
+				}
+			}
+			.itemFooter{
+				.last-modified-icon{
+					background: url(img/icon-pmc.png);
+					background-position: -69px -7px;
+					width: 30px;
+					height: 20px;
+					float: left;
+				}
+				.last_modified{
+					margin: 10px;
+					.timeDetail{
+						font-size: 10px;
+						float: left;
+						color: rgb(178, 178, 178);
+					}
+				}
+				.filename{
+					height: 40px;
+					line-height: 40px;
+					font-size: 30px;
+					font-weight: bold;
+				}
+			}
+		}
+	}
+}
+.footer_container{
+	position:fixed;
+	left: 0px;
+	bottom: 0px;
+	width: 100%;
+	z-index: 1000;
+	height: @footer_container;
+	background-color: @mainColor;
+	color: @textColor;
+	text-align: center;
+	.company{
+		line-height: 2.5;
+		color: rgb(97, 97, 97);
+		font-size: 8px;
+	}
+}
+body{
+	overflow: hidden;
+	a{
+		cursor: pointer;
+	}
+	.dropdown-menu{
+		border: 1px solid rgba(82, 230, 115, 0.8) !important;
+	}
+	.divider{
+		background-color: rgba(82, 230, 115, 0.8) !important;
+	}
+	.modal-backdrop{
+		top: @headerHeight !important;
+	}
+}
+.delete-btn{
+	display: none;
+	position: absolute;
+	left: 0px;
+	top: -3px;
+	color: rgb(253, 4, 4);
+	font-size: 1px;
+	text-align: center;
+	border-radius: 5px;
+	background: #EEE;
+	width: 12px;
+	height: 12px;
+	line-height: 12px;
+	cursor: pointer;
+}
+/*::-webkit-scrollbar {
+    width: 2px;
+}*/
+/* 滚动槽 */
+/*::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}*/
+/* 滚动条滑块 */
+/*::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.4);
+}
+::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(0, 0, 0, 0.6);
+}
+input::-webkit-input-placeholder {
+	text-align: center;
+}
+*/

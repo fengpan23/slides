@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>云课件 课件列表</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <link href="styles/admin/list.css" rel="stylesheet"> 
+    <script src="scripts/libs/jQuery.js"></script>
+    <script src="slide_admin_module/decklist.js"></script>
+  </head>
+  <body>
+    <div class="message">
+    </div>
+    <div class="toolzone">
+      <div class="tool_delete">
+        <button type="button" id="deletedeck">删除</button>
+      </div>
+      <div class="tool_search">
+        <fieldset class="search">
+            <input type="text" id="keyword"/>
+            <button type="button" id="searchbutton">搜索</button>
+        </fieldset>
+      </div>
+    </div>
+    <div class="tablelist">
+      <table>
+        <thead>
+          <tr>
+            <th> <input type="checkbox" class="allselect" ></th>
+            <th>课件名</th>
+            <th class="order" order-type="uid" sort="-1">作者</th>
+            <th class="order" order-type="report" sort="-1">举报数</th>
+            <th class="order" order-type="favtimes" sort="-1">收藏数</th>
+            <th>操作</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+        <tfoot>
+           <tr style="text-align:center">
+            <td colspan="6">
+              <a class="prePage" href="#">上一页</a>&nbsp;&nbsp;&nbsp;&nbsp;
+              <a class="nextPage" href="#">下一页</a>
+            </td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+  </body>
+</html>

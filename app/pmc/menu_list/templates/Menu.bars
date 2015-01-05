@@ -1,0 +1,30 @@
+<div class="pmc_menu">
+	<ul>
+		<li><i class="default-ico"/><div class="classify alldeck" data-type="all">所有课件<span class="deck-number"></span></div></li>
+		<li class="open"><i class="classify-ico" title="从云端同步"/>
+			<div>我的文件夹<i class="addClassify"/></div>
+			<div class="error">已有此文件夹</div>
+			<span class="addClassifyBar">
+				<input type="text" class="classInputBar" maxlength="20"/>
+			</span>
+			<ul class="userFolder">
+			</ul>
+		</li>
+		<li>
+			<i class="removed-ico"/>
+			<div class="classify trashdeck" data-type="trash">垃圾篓
+				<span class="deck-number"></span>
+			</div>
+		</li>
+	</ul>
+</div>
+<div class="pmc_tag">
+	<div class="tag-header">
+		<i></i>
+		<span class="tag-text">标签</span>
+		<span class="getTag">刷新</span>
+		<button>删除</button>
+	</div>
+	<div class="tagContainer">
+	</div>
+</div>

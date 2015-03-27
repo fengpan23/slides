@@ -783,7 +783,7 @@ function program1(depth0,data) {
     + "\"></div>\r\n	</div>\r\n	<div class=\"tool-linespacing\">\r\n		<div class=\"tool-content\">行间距:</div>\r\n		<div class=\"linespacing-value icon-chevron-down\" data-nature=\"lineSpacing\">";
   stack1 = helpers['if'].call(depth0, (depth0 && depth0.lineSpacing), {hash:{},inverse:self.program(4, program4, data),fn:self.program(2, program2, data),data:data});
   if(stack1 || stack1 === 0) { buffer += stack1; }
-  buffer += "</div>\r\n	</div>\r\n<div>\r\n";
+  buffer += "</div>\r\n	</div>\r\n</div>\r\n";
   return buffer;
   }
 function program2(depth0,data) {

@@ -30,7 +30,7 @@ function(Backbone, ComponentFactory, GlobalEvents, DeckUtils, Component, Guides)
 
 			this._deck.on('change:theme', this._updateTheme, this);
 // 			this._deck.on('change:surface', this._updateSurface, this);
-// 			this.setModel(this._deck.get('activeSlide'));
+			this.setModel(this._deck.get('activeSlide'));
 			
 // //			this.$el.on("contextmenu", this._rightMenu);
 
@@ -76,9 +76,9 @@ function(Backbone, ComponentFactory, GlobalEvents, DeckUtils, Component, Guides)
 
 			var self = this;
 			setTimeout(function() {
-				self._rendered = true;
 				self._resize();
-				// self._renderContents();
+				self._rendered = true;	
+				self._renderContents(); //init render active slide
 			}, 0);
 
 			//init guide lines, use at componentView
@@ -86,7 +86,7 @@ function(Backbone, ComponentFactory, GlobalEvents, DeckUtils, Component, Guides)
 
 			// if add slide btn is provider create it
 			var topAddProvider = this._support.get('topAddProvider');
-			topAddProvider && this.$el.append(topAddProvider.render(-1, 'top'));
+			topAddProvider && this.$el.append(topAddProvider.render(0, 'top'));
 			var bottomAddProvider = this._support.get('bottomAddProvider');
 			bottomAddProvider && this.$el.append(bottomAddProvider.render(1, 'bottom'));
 			

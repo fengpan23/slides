@@ -44,12 +44,12 @@ define(['libs/backbone',
 				if(component && selected){
 					var toolView = this._creatToolView(component);
 					this.$edittoolbar.empty().append(toolView.render());
-					this.$addtoolbar.css('left',-200);
+					this.$addtoolbar.css('left',-240);
 					this.$edittoolbar.css('left', 0);
 					return;
 				}
 				this.$addtoolbar.css('left', 0);
-				this.$edittoolbar.css('left', 200);
+				this.$edittoolbar.css('left', 240);
 			},
 
 			/**

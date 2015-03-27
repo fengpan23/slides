@@ -63,10 +63,10 @@ body .toolkit {
   background: re;
   top: 50px;
   right: 0px;
-  width: 180px;
+  width: 220px;
   bottom: 0px;
   border-left: 1px solid #eaeaea;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 body .toolkit .toolbar {
   text-align: center;
@@ -76,6 +76,7 @@ body .toolkit .toolbar {
   width: 100%;
   cursor: default;
   transition: left 0.2s ease;
+  padding-bottom: 20px;
 }
 body .toolkit .toolbar .unit-btn {
   width: 100px;
@@ -427,16 +428,15 @@ body .toolkit .toolbar .audio-edit .tool-loop-switch input[type="checkbox"] {
   float: right;
 }
 body .toolkit .toolbar[data-type="edit"] {
-  left: 200px;
+  left: 220px;
   height: 100%;
   background: #e7e7e7;
-  overflow-x: hidden;
 }
 body .operating-table {
   position: absolute;
   left: 145px;
   top: 50px;
-  right: 180px;
+  right: 220px;
   bottom: 0;
   overflow: hidden;
 }

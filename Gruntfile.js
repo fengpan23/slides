@@ -1,7 +1,5 @@
 // Generated on 2013-02-27 using generator-webapp 0.1.5
 'use strict';
-var lrSnippet = require('grunt-contrib-livereload/lib/utils').livereloadSnippet;
-
 var mountFolder = function(connect, dir) {
     return connect.static(require('path').resolve(dir));
 };
@@ -15,7 +13,6 @@ var mountFolder = function(connect, dir) {
 module.exports = function(grunt) {
     // load all grunt tasks
     require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
-
     // configurable paths
     var yeomanConfig = {
         app: 'app',
@@ -145,18 +142,6 @@ module.exports = function(grunt) {
                     "<%= yeoman.app %>/**/templates/*.bars"
                 ],
                 tasks: ['handlebars', 'livereload-start']
-            },
-            livereload: {
-                options: {
-                    livereload: '<%= connect.options.livereload %>' // this port must be same with the connect livereload port
-                },
-                files: [
-                    '<%= yeoman.app %>/*.html',
-                    '{.tmp,<%= yeoman.app %>}/styles/{,*/}*.css',
-                    '{.tmp,<%= yeoman.app %>}/scripts/{,*/}*.js',
-                    '<%= yeoman.app %>/images/{,*/}*.{png,jpg,jpeg,webp}'
-                ],
-                tasks: ['livereload']
             },
             less: {
                 files: [
@@ -403,8 +388,6 @@ module.exports = function(grunt) {
             // 'clean:server',
             'handlebars',
             'less',
-            'livereload-start',
-            'connect:livereload',
             'watch'
         ]);
     });

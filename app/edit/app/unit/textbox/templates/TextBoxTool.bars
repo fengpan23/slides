@@ -12,5 +12,5 @@
 		<div class="tool-content">行间距:</div>
 		<div class="linespacing-value icon-chevron-down" data-nature="lineSpacing">{{#if lineSpacing}}{{lineSpacing}}{{else}}normal{{/if}}</div>
 	</div>
-<div>
+</div>
 {{/attributes}}
